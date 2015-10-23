@@ -1,0 +1,18 @@
+en:
+welcome: "Welcome to Calculator! Enter your name:"
+valid_name: "Make sure to end a valid name."
+first_num: "What's the first number?"
+hmm: "Hmm...that doesn't look like a valid number."
+second_num: "What's the second number?"
+choose: "Must choose 1, 2, 3 or 4"
+replay: "Do you want to perform another calculation? (Y to calculate again.) "
+bye: "Thanks for using the Calculator app. Good-bye!"
+fr:
+welcome: "Bienvenue à la calculatrice. Entrez votre nom:"
+valid_name: "Assurez-vous de mettre fin à un nom valide."
+first_num: "Quel est le premier numéro?"
+hmm: "Hmm...qui ne ressemble pas à un nombre valide."
+second_num: "Quel est le deuxième numéro?"
+choose: "Doit choisir 1, 2, 3 ou 4."
+replay: "Voulez-vous effectuer un autre calcul? (y pour calculer à nouveau.)"
+bye: "Merci pour l'aide l'application Calculette. Au-revoir!"
