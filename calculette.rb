@@ -9,7 +9,8 @@ def messages(message, lang='fr')
 end
 
 def prompt(message)
-  Kernel.puts("=> #{message}")
+  puts
+  Kernel.puts("#{message}")
 end
 
 def number?(input)
@@ -39,42 +40,43 @@ def operation_to_message(op)
   word
 end
 
-prompt(MESSAGES['welcome'])
+prompt(messages('welcome', 'fr'))
 
 name = ''
 loop do
   name = Kernel.gets().chomp()
 
   if name.empty?()
-    prompt(MESSAGES['valid_name'])
+    prompt(messages('valid_name', 'fr'))
   else
     break
   end
 end
 
 prompt("Bonjour #{name}!")
+
 loop do # main loop
   number1 = ''
   loop do
-    prompt(MESSAGES['first_num'])
+    prompt(messages('first_num', 'fr'))
     number1 = Kernel.gets().chomp()
 
     if number?(number1)
       break
     else
-      prompt(MESSAGES['hmm'])
+      prompt(messages('hmm', 'fr'))
     end
   end
 
   number2 = ''
   loop do
-    prompt(MESSAGES['second_num'])
+    prompt(messages('second_num', 'fr'))
     number2 = Kernel.gets().chomp()
 
     if number?(number2)
       break
     else
-      prompt(MESSAGES['hmm'])
+      prompt(messages('hmm', 'fr'))
     end
   end
 
@@ -95,7 +97,7 @@ loop do # main loop
     if %w(1 2 3 4).include?(operator)
       break
     else
-      prompt(MESSAGES['choose'])
+      prompt(messages('choose', 'fr'))
     end
   end
 
@@ -114,9 +116,9 @@ loop do # main loop
 
   prompt("Le résultat est #{result}. ")
 
-  prompt(MESSAGES['replay'])
+  prompt(messages('replay', 'fr'))
   answer = Kernel.gets().chomp()
   break unless answer.downcase().start_with?('y')
 end
 
-prompt(MESSAGES['bye'])
+prompt(messages('bye', 'fr'))
